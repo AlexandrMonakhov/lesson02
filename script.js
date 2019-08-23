@@ -1,10 +1,18 @@
-let num = '266219';
 
-let mult = num[0] * num[1] * num[2] * num[3] * num[4] * num[5];
+let num = 266219;
+let mul = 0;
+
+while (num > 0) {
+   mul *= num % 10;
+   num = Math.floor(num / 10);
+}
+
 // вывод переменной num
-console.log(mult);
+console.log(mul);
 
-// возведение в степень
-let result = mult ** 3;
+// // возведение в степень
+let result = mul ** 3;
 
-console.log(String(mult).slice(0, 2));
+console.log(String(mul).slice(0, 2));
+
+
