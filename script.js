@@ -28,3 +28,5 @@ console.log('addExpenses: ', addExpenses.toLowerCase().split(', '));
 // дневной бюджет
 let budgetDay = 135000 / 30;
 console.log('Дневной бюджет: ', budgetDay);
+budgetDay = 13500 % 30;
+console.log('Остаток от деления', budgetDay);
